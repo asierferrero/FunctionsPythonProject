@@ -1,3 +1,4 @@
+from hangman import *
 print("Jokoak")
 print("---------------------------------")
 print("1.- Egunean behin")
