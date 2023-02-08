@@ -17,4 +17,4 @@ match aukera:
     case 4:
         print("Goodbye, come again soon!")
     case other:
-        print("that option does not exist.")
+        print("That option does not exist.")
