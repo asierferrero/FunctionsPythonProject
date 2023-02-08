@@ -5,6 +5,7 @@ while a == 1:
 
     score = 0 #initial score
     fail = 0
+    points = 0
     start_time = time.time()  #start the time
 
     print("EGUNEAN BEHIN")
@@ -20,7 +21,7 @@ while a == 1:
 
     while x < duration:
         remaining_time = duration - int(x)
-        x += 1  # equivalent to x++
+        x += 1
         print(str(remaining_time))
         time.sleep(1)
 
@@ -36,6 +37,7 @@ while a == 1:
 
     if x == "b":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -52,6 +54,7 @@ while a == 1:
 
     if x == "c":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -68,6 +71,7 @@ while a == 1:
 
     if x == "a":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -84,6 +88,7 @@ while a == 1:
 
     if x == "a":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -100,6 +105,7 @@ while a == 1:
 
     if x == "b":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -116,6 +122,7 @@ while a == 1:
 
     if x == "a":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -132,6 +139,7 @@ while a == 1:
 
     if x == "b":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -148,6 +156,7 @@ while a == 1:
 
     if x == "a":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -164,6 +173,7 @@ while a == 1:
 
     if x == "b":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -180,6 +190,7 @@ while a == 1:
 
     if x == "a":
         score = score + 1
+        points += 6
 
     else:
         fail = fail + 1
@@ -192,6 +203,14 @@ while a == 1:
     final_time = round(total_time, 2) #round the decimals of the final time
 
     print(name + ", you scored " + str(score) + "/10 and you did it in " + str(final_time) + " seconds")
+
+    if final_time < 30:
+        points = points + 20
+
+    elif final_time :
+        points = points + 20
+
+    print("Total points: " + str(points))
 
     a = input("Do you want to play again? (yes/no): ")
 
