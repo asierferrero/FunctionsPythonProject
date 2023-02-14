@@ -6,7 +6,7 @@ print("\nHau urkatuaren jolasa da")
 name = input("Sartu zure izena: ")
 print("\nKaixo " + name + "! Zorte on!")
 time.sleep(2)
-print("Jokoa haztera doa!")
+print("Jokoa hastera doa!")
 time.sleep(3)
 
 
@@ -37,9 +37,8 @@ def hangman():
     
         guess = input("Hau da asmatu beharreko hitza: " + display + " Enter your guess: \n")
         guess = guess.strip()
-        if len(guess.strip()) == 0 or len(guess.strip()) >= 2 or guess <= "9":
+        if len(guess) == 0 or len(guess) >= 2 or guess <= "9":
             print("Invalid Input, Try a letter\n")
-            hangman()
 
         elif guess in word:
             already_guessed.extend([guess])
