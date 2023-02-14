@@ -1,225 +1,231 @@
 import time
+def eb(name):
 
-a = 1
-while a == 1:
+    a = 1
+    while a == 1:
 
-    score = 0 #initial score
-    fail = 0
-    points = 0
-    start_time = time.time()  #start the time
+        score = 0 #initial score
+        fail = 0
+        points = 0
+        start_time = time.time()  #start the time
 
-    print("EGUNEAN BEHIN")
-    print("===========================================================================================")
+        print("===========================================================================================")
+        print("EGUNEAN BEHIN")
+        print("===========================================================================================")
 
-    name = input("Enter your name before starting: ")
-    print("===========================================================================================")
+        print(name + ", get ready!")
 
-    print(name + ", get ready!")
+        duration = 3  # duration of the timer
+        x = 0
 
-    duration = 3  # duration of the timer
-    x = 0
+        while x < duration:
+            remaining_time = duration - int(x)
+            x += 1
+            print(str(remaining_time))
+            time.sleep(1)
 
-    while x < duration:
-        remaining_time = duration - int(x)
-        x += 1
-        print(str(remaining_time))
-        time.sleep(1)
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("1. What is the output of the following code: print('Hello, World!'[1:5])")
 
-    print("1. What is the output of the following code: print('Hello, World!'[1:5])")
+        print("a) World")
+        print("b) ell")
+        print("c) ello")
 
-    print("a) World")
-    print("b) ell")
-    print("c) ello")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "b":
+            score = score + 1
+            points += 6
 
-    if x == "b":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("2. What is the result of the following code: x = 'hello'; y = 'world'; print(x + y)? ")
 
-    print("2. What is the result of the following code: x = 'hello'; y = 'world'; print(x + y)? ")
+        print("a) worldhello")
+        print("b) hello world")
+        print("c) helloworld")
 
-    print("a) worldhello")
-    print("b) hello world")
-    print("c) helloworld")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "c":
+            score = score + 1
+            points += 6
 
-    if x == "c":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("3. What does the following code do: for i in range(10): print(i)")
 
-    print("3. What does the following code do: for i in range(10): print(i)")
+        print("a) Prints the numbers 0 through 9")
+        print("b) Prints the numbers 1 through 10")
+        print("c) Prints the numbers 10 through 1")
 
-    print("a) Prints the numbers 0 through 9")
-    print("b) Prints the numbers 1 through 10")
-    print("c) Prints the numbers 10 through 1")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "a":
+            score = score + 1
+            points += 6
 
-    if x == "a":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("4. What is the purpose of the following code: def hello(): print('Hello, World!')? ")
 
-    print("4. What is the purpose of the following code: def hello(): print('Hello, World!')? ")
+        print("a) Prints 'Hello, World!' once.")
+        print("b) Prints 'Hello, World!' ten times.")
+        print("c) Prints 'Hello, World!' whenever the code is run.")
 
-    print("a) Prints 'Hello, World!' once.")
-    print("b) Prints 'Hello, World!' ten times.")
-    print("c) Prints 'Hello, World!' whenever the code is run.")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "a":
+            score = score + 1
+            points += 6
 
-    if x == "a":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("5. What is the result of the following code: x = 5; y = 10; print(x + y)? ")
 
-    print("5. What is the result of the following code: x = 5; y = 10; print(x + y)? ")
+        print("a) 10")
+        print("b) 15")
+        print("c) 5")
 
-    print("a) 10")
-    print("b) 15")
-    print("c) 5")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "b":
+            score = score + 1
+            points += 6
 
-    if x == "b":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("6. What is the purpose of the 'if' statement here: if x > y: print('x is greater than y')? ")
 
-    print("6. What is the purpose of the 'if' statement here: if x > y: print('x is greater than y')? ")
+        print("a) To check if x is greater than y")
+        print("b) To check if x is less than or equal to y")
+        print("c) To check if x is equal to y")
 
-    print("a) To check if x is greater than y")
-    print("b) To check if x is less than or equal to y")
-    print("c) To check if x is equal to y")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "a":
+            score = score + 1
+            points += 6
 
-    if x == "a":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("7. What is the result of the following code: x = [1, 2, 3, 4, 5]; print(len(x))? ")
 
-    print("7. What is the result of the following code: x = [1, 2, 3, 4, 5]; print(len(x))? ")
+        print("a) 4")
+        print("b) 5")
+        print("c) 6")
 
-    print("a) 4")
-    print("b) 5")
-    print("c) 6")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "b":
+            score = score + 1
+            points += 6
 
-    if x == "b":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("8. What is the purpose of the following code: x = [1, 2, 3, 4, 5]; y = x[2:4]? ")
 
-    print("8. What is the purpose of the following code: x = [1, 2, 3, 4, 5]; y = x[2:4]? ")
+        print("a) To create a new list y with elements 2 through 4 of the list x")
+        print("b) To create a new list y with elements 1 through 4 of the list x")
+        print("c) To create a new list y with elements 3 through 5 of the list x")
 
-    print("a) To create a new list y with elements 2 through 4 of the list x")
-    print("b) To create a new list y with elements 1 through 4 of the list x")
-    print("c) To create a new list y with elements 3 through 5 of the list x")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "a":
+            score = score + 1
+            points += 6
 
-    if x == "a":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("9. What is the output of the following code: x = {'name': 'John', 'age': 30} print(x['name'])? ")
 
-    print("9. What is the output of the following code: x = {'name': 'John', 'age': 30} print(x['name'])? ")
+        print("a) 30")
+        print("b) John")
+        print("c) name")
 
-    print("a) 30")
-    print("b) John")
-    print("c) name")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "b":
+            score = score + 1
+            points += 6
 
-    if x == "b":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        print("10. What is the purpose of the 'import' statement in the following code: import math? ")
 
-    print("10. What is the purpose of the 'import' statement in the following code: import math? ")
+        print("a) To include the math module in the code")
+        print("b) To exclude the math module from the code")
+        print("c) To replace the math module with a new one")
 
-    print("a) To include the math module in the code")
-    print("b) To exclude the math module from the code")
-    print("c) To replace the math module with a new one")
+        x = input("Answer a, b or c: ")
 
-    x = input("Answer a, b or c: ")
+        if x == "a":
+            score = score + 1
+            points += 6
 
-    if x == "a":
-        score = score + 1
-        points += 6
+        else:
+            fail = fail + 1
 
-    else:
-        fail = fail + 1
+        print("===========================================================================================")
 
-    print("===========================================================================================")
+        end_time = time.time()  #stop the time
 
-    end_time = time.time()  #stop the time
+        total_time = end_time - start_time #total time without rounding
+        final_time = round(total_time, 2) #round the decimals of the final time
 
-    total_time = end_time - start_time #total time without rounding
-    final_time = round(total_time, 2) #round the decimals of the final time
+        print(name + ", you scored " + str(score) + "/10 and you did it in " + str(final_time) + " seconds")
 
-    print(name + ", you scored " + str(score) + "/10 and you did it in " + str(final_time) + " seconds")
+        if final_time <= 50:
+            points = points + 30
 
-    if final_time < 30:
-        points = points + 20
+        elif 51 <= final_time <= 80:
+            points = points + 20
 
-    elif final_time :
-        points = points + 20
+        elif 81 <= final_time <= 120:
+            points = points + 10
 
-    print("Total points: " + str(points))
+        else:
+            points = points + 0
 
-    a = input("Do you want to play again? (yes/no): ")
+        print("Total points: " + str(points))
 
-    if a == "yes":
-        a = 1
+        a = input("Do you want to play again? (yes/no): ")
 
-    elif a == "no":
-        a = 0
-        print("Goodbye!")
+        if a == "yes":
+            a = 1
 
-    else:
-        print("You have to enter 'yes' or 'no'")
+        elif a == "no":
+            a = 0
+            print("Goodbye!")
+            print("===========================================================================================")
+
+        else:
+            print("You have to enter 'yes' or 'no'")
