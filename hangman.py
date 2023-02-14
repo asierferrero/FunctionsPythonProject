@@ -22,6 +22,7 @@ def play_loop():
         print("Agur!")
         exit()
 
+
 # Initializing all the conditions required for the game:
 def hangman():
     words_to_guess = ["january","border","image","film","promise","kids","lungs","doll","rhyme","damage"
@@ -35,7 +36,7 @@ def hangman():
 
     while count != limit or word == '_' * length:
     
-        guess = input("Hau da asmatu beharreko hitza: " + display + " Enter your guess: \n")
+        guess = input("Hau da asmatu beharreko hitza: " + display + " Saiatu asmatzen: \n")
         guess = guess.strip()
         if len(guess) == 0 or len(guess) >= 2 or guess <= "9":
             print("Invalid Input, Try a letter\n")
@@ -48,7 +49,7 @@ def hangman():
             print(display + "\n")
 
         elif guess in already_guessed:
-            print("Try another letter.\n")
+            print("Saiatu beste hizki batekin\n")
 
         else:
             count += 1
@@ -63,7 +64,7 @@ def hangman():
                     "  |      \n"
                     "  |      \n"
                     "__|__\n")
-                print("Wrong guess. " + str(limit - count) + " guesses remaining\n")
+                print("Huts egin duzu " + str(limit - count) + " falta diren saialdiak\n")
 
             elif count == 2:
                 time.sleep(1)
@@ -75,7 +76,7 @@ def hangman():
                     "  |      \n"
                     "  |      \n"
                     "__|__\n")
-                print("Wrong guess. " + str(limit - count) + " guesses remaining\n")
+                print("Huts egin duzu " + str(limit - count) + " falta diren saialdiak\n")
 
             elif count == 3:
                 time.sleep(1)
@@ -87,7 +88,7 @@ def hangman():
                         "  |      \n"
                         "  |      \n"
                         "__|__\n")
-                print("Wrong guess. " + str(limit - count) + " guesses remaining\n")
+                print("Huts egin duzu " + str(limit - count) + " falta diren saialdiak\n")
 
             elif count == 4:
                 time.sleep(1)
@@ -99,7 +100,7 @@ def hangman():
                     "  |      \n"
                     "  |      \n"
                     "__|__\n")
-                print("Wrong guess. " + str(limit - count) + " last guess remaining\n")
+                print("Huts egin duzu " + str(limit - count) + " azken saialdia\n")
 
             elif count == 5:
                 time.sleep(1)
@@ -111,7 +112,7 @@ def hangman():
                     "  |    /|\ \n"
                     "  |    / \ \n"
                     "__|__\n")
-                print("Wrong guess. You are hanged!!!\n")
+                print("Huts egin duzu. You are hanged!!!\n")
                 print("The word was:",already_guessed,word)
 
 
