@@ -5,7 +5,7 @@ def sps(name):
     pcScore = 0;
     p1Score = 0;
     match = 0;
-    os.system('cls')
+
     while match < 5:
         answer = "incorrect"
         while answer == "incorrect":
