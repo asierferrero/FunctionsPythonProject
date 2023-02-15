@@ -3,9 +3,11 @@
 Description of the Project
 
 In this project the user will have 3 games to choose from.
- Egunean Behin – A trivia game
- Paper Scissors Stone
- Hangman
+
+Egunean Behin – A trivia game
+Paper Scissors Stone
+Hangman
+
 The user will be prompt to choose a game and the program will run that game.
 Egunean behin
  Collaborator Asier Ferrero
